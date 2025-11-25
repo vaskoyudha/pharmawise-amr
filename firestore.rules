@@ -1,0 +1,54 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function hasRole(role) {
+      return isAuthenticated() && (request.auth.token.role == role);
+    }
+
+    function hasAnyRole(roles) {
+      return isAuthenticated() && (request.auth.token.role in roles);
+    }
+
+    // Public read-only collections (campaign assets, guidelines, chatbot content)
+    match /campaignAssets/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /guidelines/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // User profile access — users may read/update their own document.
+    match /users/{userId} {
+      allow read, update: if isAuthenticated() && request.auth.uid == userId;
+      allow create: if isAuthenticated();
+      allow delete: if hasRole('admin');
+    }
+
+    // Core clinical documents — only authenticated users
+    match /{collectionName}/{docId} where
+      collectionName in [
+        "prescriptions",
+        "reviewResults",
+        "counselingOutputs",
+        "demandReports",
+        "therapyFailures",
+        "learningRecords"
+      ] {
+      allow read, write: if isAuthenticated();
+    }
+
+    // Public chatbot feedback
+    match /publicSurveys/{docId} {
+      allow create: if true;
+      allow read: if hasAnyRole(["regulator", "admin"]);
+    }
+  }
+}
+

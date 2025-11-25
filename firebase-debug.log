@@ -1,0 +1,1337 @@
+[debug] [2025-11-24T09:02:18.208Z] ----------------------------------------------------------------------
+[debug] [2025-11-24T09:02:18.210Z] Command:       /home/vasko/.nvm/versions/node/v20.19.5/bin/node /home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/.bin/firebase emulators:start
+[debug] [2025-11-24T09:02:18.210Z] CLI Version:   14.26.0
+[debug] [2025-11-24T09:02:18.211Z] Platform:      linux
+[debug] [2025-11-24T09:02:18.211Z] Node Version:  v20.19.5
+[debug] [2025-11-24T09:02:18.211Z] Time:          Mon Nov 24 2025 16:02:18 GMT+0700 (Western Indonesia Time)
+[debug] [2025-11-24T09:02:18.211Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-24T09:02:18.449Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] ⚠  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[debug] [2025-11-24T09:02:18.533Z] openjdk version "21.0.8" 2025-07-15
+
+[debug] [2025-11-24T09:02:18.533Z] OpenJDK Runtime Environment (build 21.0.8+9-Ubuntu-0ubuntu124.04.1)
+OpenJDK 64-Bit Server VM (build 21.0.8+9-Ubuntu-0ubuntu124.04.1, mixed mode, sharing)
+
+[debug] [2025-11-24T09:02:18.539Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage, extensions"}}
+[debug] [2025-11-24T09:02:18.542Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.542Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-24T09:02:18.543Z] Unable to check that https://cloudresourcemanager.googleapis.com is enabled on pharmawise-amr-dev. Calls to it will fail if it is not enabled
+[debug] [2025-11-24T09:02:18.543Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.544Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.544Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[error] ⬢  extensions: Unable to look up project number for pharmawise-amr-dev.
+ If this is a real project, ensure that you are logged in and have access to it.
+ If this is a fake project, please use a project ID starting with 'demo-' to skip production calls.
+ Continuing with a fake project number - secrets and other features that require production access may behave unexpectedly. {"metadata":{"emulator":{"name":"extensions"},"message":"Unable to look up project number for pharmawise-amr-dev.\n If this is a real project, ensure that you are logged in and have access to it.\n If this is a fake project, please use a project ID starting with 'demo-' to skip production calls.\n Continuing with a fake project number - secrets and other features that require production access may behave unexpectedly."}}
+[debug] [2025-11-24T09:02:18.550Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.550Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.551Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.551Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.551Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.551Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-24T09:02:18.556Z] Emulator locator file path: /tmp/hub-pharmawise-amr-dev.json
+[debug] [2025-11-24T09:02:18.556Z] [hub] writing locator at /tmp/hub-pharmawise-amr-dev.json
+[debug] [2025-11-24T09:02:18.562Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-11-24T09:02:18.563Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.563Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.563Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-24T09:02:18.563Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, hosting, pubsub, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, hosting, pubsub, dataconnect\u001b[22m"}}
+[debug] [2025-11-24T09:02:18.565Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.565Z] No OAuth tokens found
+[debug] [2025-11-24T09:02:18.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-24T09:02:18.565Z] Failed to get Admin SDK config for pharmawise-amr-dev, falling back to cache Failed to get Admin SDK for Firebase project pharmawise-amr-dev. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project pharmawise-amr-dev. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Failed to authenticate, have you run \u001b[1mfirebase login\u001b[22m?","original":{},"status":500},"status":500}
+[warn] ⚠  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
+[debug] [2025-11-24T09:02:18.580Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-11-24T09:02:18.580Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-11-24T09:02:18.580Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/vasko/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","pharmawise-amr-dev","--rules","/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/vasko/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"pharmawise-amr-dev\",\"--rules\",\"/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-11-24T09:02:19.657Z] Nov 24, 2025 4:02:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Nov 24, 2025 4:02:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-11-24T09:02:19.679Z] API endpoint: http://127.0.0.1:8080
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\n"}}
+[debug] [2025-11-24T09:02:19.680Z] If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-11-24T09:02:26.949Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-11-24T09:02:27.809Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2025-11-24T09:02:27.815Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/functions\" for Cloud Functions..."}}
+[debug] [2025-11-24T09:02:27.818Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-11-24T09:02:28.383Z] > [functions] package.json contents: {
+  "name": "pharmawise-amr-functions",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "npm run build && firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0",
+    "zod": "^3.23.8",
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+[debug] [2025-11-24T09:02:28.383Z] Building nodejs source
+[debug] [2025-11-24T09:02:28.383Z] Failed to find version of module node: reached end of search path /home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/functions/node_modules
+[info] ✔  functions: Using node@20 from host. 
+[debug] [2025-11-24T09:02:28.386Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T09:02:28.393Z] Found firebase-functions binary at '/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8474
+
+[debug] [2025-11-24T09:02:28.778Z] Got response from /__/functions.yaml {"endpoints":{"scorePrescription":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"scorePrescription"},"generateCounselingScript":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"generateCounselingScript"},"publicChatbot":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"publicChatbot"},"demandForecast":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"demandForecast"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-11-24T09:02:29.586Z] Nov 24, 2025 4:02:29 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Nov 24, 2025 4:02:29 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[info] ✔  functions: Loaded functions definitions from source: scorePrescription, generateCounselingScript, publicChatbot, demandForecast. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scorePrescription, generateCounselingScript, publicChatbot, demandForecast."}}
+[info] ✔  functions[us-central1-scorePrescription]: http function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/scorePrescription). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/scorePrescription)."}}
+[info] ✔  functions[us-central1-generateCounselingScript]: http function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/generateCounselingScript). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/generateCounselingScript)."}}
+[info] ✔  functions[us-central1-publicChatbot]: http function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/publicChatbot). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/publicChatbot)."}}
+[info] ✔  functions[us-central1-demandForecast]: http function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/demandForecast). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/pharmawise-amr-dev/us-central1/demandForecast)."}}
+[debug] [2025-11-24T09:02:32.839Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-11-24T09:03:58.669Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/generateCounselingScript
+[debug] [2025-11-24T09:04:02.331Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:04:03.348Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:11:39.401Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:11:40.469Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:11:47.805Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:11:48.839Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:11:52.597Z] Functions emulator received unknown request at path /pharmawise-b0289/us-central1/demandForecast
+[debug] [2025-11-24T09:23:48.395Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[info] i  extensions: Stopping Extensions Emulator {"metadata":{"emulator":{"name":"extensions"},"message":"Stopping Extensions Emulator"}}
+[debug] [2025-11-24T09:23:48.400Z] [Extensions] Stopping Extensions emulator, this is a noop.
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[debug] [2025-11-24T09:23:48.414Z] *** shutting down gRPC server since JVM is shutting down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** shutting down gRPC server since JVM is shutting down\n"}}
+[debug] [2025-11-24T09:23:48.430Z] *** server shut down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** server shut down\n"}}
+[info] i  auth: Stopping Authentication Emulator {"metadata":{"emulator":{"name":"auth"},"message":"Stopping Authentication Emulator"}}
+[debug] [2025-11-24T09:23:48.792Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.797Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.798Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.799Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.800Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.804Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.805Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.806Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.810Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.812Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.812Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.818Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.819Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.820Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.821Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.821Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.825Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.826Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.827Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.831Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.832Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.832Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.833Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.834Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.835Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.836Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.836Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.837Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.838Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.838Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.840Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.841Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.841Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.842Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.843Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.845Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.846Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.847Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.847Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.849Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.850Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.850Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.851Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.851Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.852Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.853Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.853Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.854Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.855Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.855Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.856Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.857Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.858Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.858Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.859Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.860Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.860Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.861Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.861Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  storage: Stopping Storage Emulator {"metadata":{"emulator":{"name":"storage"},"message":"Stopping Storage Emulator"}}
+[debug] [2025-11-24T09:23:48.866Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.870Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.871Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.871Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.872Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.876Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.876Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.877Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.878Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.878Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.879Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.880Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.880Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.881Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.882Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.882Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.882Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.883Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.885Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.886Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.886Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.886Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.887Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.888Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.889Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.890Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.891Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.891Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.892Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.893Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-24T09:23:48.893Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/vasko/Project Vasko/NEWEST PROJECT/pharmawise-amr/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
