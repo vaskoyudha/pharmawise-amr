@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { Navbar } from "@/components/landing/Navbar";
@@ -9,6 +9,12 @@ import { FloatingElements } from "@/components/effects/FloatingElements";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-display",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-premium",
 });
 
 const inter = Inter({
@@ -24,7 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} ${inter.variable} font-body`}>
+      <body className={`${spaceGrotesk.variable} ${poppins.variable} ${inter.variable} font-body`}>
         <Providers>
           <ParticleBackground />
           <FloatingElements />

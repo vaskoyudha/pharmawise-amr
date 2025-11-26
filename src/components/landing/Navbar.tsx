@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useRole } from "@/components/providers/role-context";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Rocket } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
@@ -29,11 +29,17 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <div className="hidden gap-2 md:flex">
+          <div className="hidden items-center gap-2 md:flex">
             <Button variant="ghost" onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}>
               {role ? "Ganti akun" : "Login"}
             </Button>
             <Button onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}>Register</Button>
+            <Button asChild className="bg-gradient-to-r from-aurora-400 to-neon text-white shadow-lg hover:shadow-aurora-400/60">
+              <Link href="/workspace" className="flex items-center gap-2">
+                <Rocket size={16} />
+                Launch App
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -66,6 +72,15 @@ export function Navbar() {
                   {role ? "Ganti akun" : "Login"}
                 </Button>
                 <Button onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}>Register</Button>
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-aurora-400 to-neon text-white shadow-lg hover:shadow-aurora-400/60"
+                >
+                  <Link href="/workspace" className="flex items-center justify-center gap-2">
+                    <Rocket size={16} />
+                    Launch App
+                  </Link>
+                </Button>
               </div>
             </nav>
           </motion.div>

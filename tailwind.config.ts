@@ -30,6 +30,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ["'Space Grotesk'", "sans-serif"],
+        premium: ["var(--font-premium)", "'Poppins'", "sans-serif"],
         body: ["'Inter'", "sans-serif"],
       },
       backgroundImage: {

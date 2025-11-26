@@ -317,6 +317,23 @@
     paint-order: stroke fill;
   }
 
+  /* Enhanced hover effects for jumbotron */
+  .hover-scale-sm {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-scale-sm:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-glow {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(63, 180, 255, 0.5);
+  }
+
   /* Smooth transitions for theme switching */
   * {
     transition-property: background-color, border-color, color, fill, stroke;
