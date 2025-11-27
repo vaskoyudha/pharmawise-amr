@@ -29,17 +29,22 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
+
+          {/* Launch App Button - Always Visible */}
+          <Button asChild className="bg-gradient-to-r from-aurora-400 to-neon text-white shadow-lg hover:shadow-aurora-400/60 hover:scale-105">
+            <Link href="/workspace" className="flex items-center gap-2">
+              <Rocket size={16} />
+              <span className="hidden sm:inline">Launch App</span>
+              <span className="sm:hidden">App</span>
+            </Link>
+          </Button>
+
+          {/* Desktop Only Buttons */}
           <div className="hidden items-center gap-2 md:flex">
             <Button variant="ghost" onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}>
               {role ? "Ganti akun" : "Login"}
             </Button>
             <Button onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}>Register</Button>
-            <Button asChild className="bg-gradient-to-r from-aurora-400 to-neon text-white shadow-lg hover:shadow-aurora-400/60">
-              <Link href="/workspace" className="flex items-center gap-2">
-                <Rocket size={16} />
-                Launch App
-              </Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}

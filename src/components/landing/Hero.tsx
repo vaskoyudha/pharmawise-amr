@@ -128,6 +128,24 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
           >
+            {/* Launch App Button - Most Prominent */}
+            <motion.div
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Button
+                variant="primary"
+                size="lg"
+                asChild
+                className="group/btn-launch relative overflow-hidden bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/70 border-2 border-purple-400/50 hover:border-purple-300"
+              >
+                <Link href="/workspace" className="flex items-center gap-3 px-8 py-3">
+                  <Rocket size={20} className="transition-transform duration-300 group-hover/btn-launch:-translate-y-1 group-hover/btn-launch:scale-125" />
+                  <span className="text-lg font-bold">Launch App</span>
+                </Link>
+              </Button>
+            </motion.div>
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -147,22 +165,6 @@ export function Hero() {
                 <Link href="#role-tour" className="flex items-center gap-2">
                   <GraduationCap size={18} className="transition-transform duration-300 group-hover/btn2:rotate-12" />
                   Lihat Mode Juri/Farmasis
-                </Link>
-              </Button>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button
-                variant="primary"
-                size="lg"
-                asChild
-                className="group/btn3 relative overflow-hidden bg-gradient-to-r from-neon to-aurora-400 text-white shadow-lg shadow-aurora-400/40 hover:shadow-aurora-400/70"
-              >
-                <Link href="/workspace" className="flex items-center gap-2">
-                  <Rocket size={18} className="transition-transform duration-300 group-hover/btn3:-translate-y-0.5 group-hover/btn3:scale-110" />
-                  Launch App
                 </Link>
               </Button>
             </motion.div>
