@@ -2,9 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { HTMLAttributes, useState, MouseEvent } from "react";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface CardProps extends HTMLMotionProps<"div"> {
   hoverEffect?: boolean;
   glowEffect?: boolean;
   tiltEffect?: boolean;
