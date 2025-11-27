@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 import { AnimatedCounter } from "@/components/effects/AnimatedCounter";
 import { Stethoscope, Pill, Sparkles, HeartPulse, ShieldCheck, GraduationCap, Activity, MessageSquare, Rocket } from "lucide-react";
@@ -72,9 +73,9 @@ export function Hero() {
       </motion.div>
 
       <div className="relative grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <motion.span
-            className="group/badge inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.4em] text-white/70 transition-all duration-300 hover:border-aurora-400/50 hover:bg-aurora-400/10 hover:text-aurora-100 hover:shadow-[0_0_20px_rgba(63,180,255,0.3)]"
+            className="group/badge inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/70 transition-all duration-300 hover:border-aurora-400/50 hover:bg-aurora-400/10 hover:text-aurora-100 hover:shadow-[0_0_20px_rgba(63,180,255,0.3)]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -84,91 +85,40 @@ export function Hero() {
             <ShieldCheck size={12} className="text-aurora-400 group-hover/badge:animate-pulse" />
           </motion.span>
 
-          <motion.h1
-            className="group/heading font-premium text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl transition-all duration-500 hover:scale-[1.02]"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.7 }}
+            className="space-y-4"
           >
-            PharmaWise-AMR
-            <span className="gradient-text text-glow relative mt-2 block text-3xl font-medium md:text-4xl transition-all duration-500 hover:scale-105 hover:text-shadow-[0_0_30px_rgba(94,252,232,0.8)]">
-              Antimicrobial Stewardship Portal & Public Education Hub
-              <motion.span
-                className="absolute -right-8 top-0"
-                animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <Sparkles size={24} className="text-aurora-400" />
-              </motion.span>
-            </span>
-          </motion.h1>
+            <h1 className="font-premium text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
+              PharmaWise-AMR
+            </h1>
+            <h2 className="gradient-text text-glow text-2xl font-semibold leading-snug md:text-3xl lg:text-4xl">
+              Antimicrobial Stewardship Portal <br className="hidden sm:block" />& Public Education Hub
+            </h2>
+          </motion.div>
 
-          <motion.p
-            className="group/paragraph max-w-3xl text-base text-white/75 transition-all duration-300 hover:text-white/90 md:text-lg"
+          <motion.div
+            className="max-w-3xl space-y-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
           >
-            Jumbotron klinis berbasis data (dengan opsi AI/ML) yang dirancang untuk kolaborasi farmasis, tenaga kesehatan,
-            dan masyarakat: menilai resep, memicu aksi stewardship, serta menjadi gerbang edukasi publik agar penggunaan
-            antimikroba lebih bijak sekaligus pengawasan & pencegahan resistensi AMR. Farmasis tidak hanya menjadi
-            dispenser, tetapi steward penggunaan antibiotik dan jembatan edukasi bagi pasien serta publik.
-          </motion.p>
-
-          <motion.div
-            className="flex flex-wrap gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-          >
-            {/* Launch App Button - Most Prominent */}
-            <motion.div
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button
-                variant="primary"
-                size="lg"
-                asChild
-                className="group/btn-launch relative overflow-hidden bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/70 border-2 border-purple-400/50 hover:border-purple-300"
-              >
-                <Link href="/workspace" className="flex items-center gap-3 px-8 py-3">
-                  <Rocket size={20} className="transition-transform duration-300 group-hover/btn-launch:-translate-y-1 group-hover/btn-launch:scale-125" />
-                  <span className="text-lg font-bold">Launch App</span>
-                </Link>
-              </Button>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button asChild size="lg" className="group/btn relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(63,180,255,0.5)]">
-                <Link href="/workspace" className="flex items-center gap-2">
-                  <Activity size={18} className="transition-transform duration-300 group-hover/btn:rotate-12" />
-                  Masuk Workspace
-                </Link>
-              </Button>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button variant="secondary" size="lg" asChild className="group/btn2 relative overflow-hidden transition-all duration-300 hover:border-aurora-400/50 hover:bg-aurora-400/10 hover:shadow-[0_0_20px_rgba(94,252,232,0.3)]">
-                <Link href="#role-tour" className="flex items-center gap-2">
-                  <GraduationCap size={18} className="transition-transform duration-300 group-hover/btn2:rotate-12" />
-                  Lihat Mode Juri/Farmasis
-                </Link>
-              </Button>
-            </motion.div>
+            <p className="text-base leading-relaxed text-white/80 md:text-lg md:leading-relaxed">
+              <span className="font-semibold text-white">Platform klinis berbasis data</span> (dengan opsi AI/ML) yang dirancang untuk kolaborasi farmasis, tenaga kesehatan, dan masyarakat.
+            </p>
+            <p className="text-base leading-relaxed text-white/75 md:text-lg md:leading-relaxed">
+              Sistem terintegrasi untuk <span className="text-aurora-300">menilai resep</span>, <span className="text-aurora-300">memicu aksi stewardship</span>, dan menjadi <span className="text-aurora-300">gerbang edukasi publik</span> agar penggunaan antimikroba lebih bijak sekaligus mencegah resistensi AMR.
+            </p>
+            <div className="flex items-start gap-3 rounded-2xl border border-purple-400/30 bg-purple-500/10 p-4">
+              <Sparkles className="mt-1 h-5 w-5 flex-shrink-0 text-purple-400" />
+              <p className="text-sm leading-relaxed text-white/85">
+                <span className="font-semibold text-white">Farmasis bukan hanya dispenser</span> — tetapi steward penggunaan antibiotik dan jembatan edukasi bagi pasien serta publik.
+              </p>
+            </div>
           </motion.div>
+
 
           <div className="grid gap-4 md:grid-cols-3">
             {stats.map((stat, idx) => {
@@ -210,6 +160,27 @@ export function Hero() {
               );
             })}
           </div>
+
+          {/* Centered Luncurkan App Button */}
+          <motion.div
+            className="flex justify-center mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+          >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Link
+                href="/workspace"
+                className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 px-10 py-5 text-xl font-bold text-white shadow-2xl shadow-purple-500/50 transition-all duration-300 hover:shadow-purple-400/70 hover:shadow-3xl border-2 border-purple-400/50 hover:border-purple-300"
+              >
+                <Rocket className="h-6 w-6" />
+                Luncurkan App
+              </Link>
+            </motion.div>
+          </motion.div>
         </div>
 
         <ScrollReveal animation="slideLeft" delay={0.3}>
@@ -217,6 +188,24 @@ export function Hero() {
             className="glass-panel glow-effect group/panel relative h-full rounded-[32px] border border-white/10 p-6 transition-all duration-500 hover:border-aurora-400/30 hover:shadow-[0_0_40px_rgba(63,180,255,0.3)]"
             whileHover={{ scale: 1.02 }}
           >
+            {/* Dashboard Preview Image */}
+            <div className="relative mb-6 overflow-hidden rounded-2xl border border-white/10">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="relative aspect-[4/3] w-full"
+              >
+                <Image
+                  src="/img/ui-dashboard-data-farmasi-stewardship.png"
+                  alt="Dashboard Preview - PharmaWise AMR"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#04060e]/90 via-[#04060e]/20 to-transparent" />
+              </motion.div>
+            </div>
+
             <p className="text-sm uppercase tracking-[0.3em] text-white/50 transition-colors duration-300 group-hover/panel:text-aurora-300">Role gateway</p>
             <h3 className="text-2xl font-semibold text-white transition-colors duration-300 group-hover/panel:text-aurora-100">
               Cukup pilih persona
@@ -225,33 +214,9 @@ export function Hero() {
               Tanpa kredensial pun, juri/farmasis/admin langsung melihat sandbox penuh insight. Pengguna biasa & dummy
               presenter menyimak empty state untuk membayangkan dampak di organisasi masing-masing.
             </p>
-            <div className="mt-6 space-y-3">
-              {roles.map((role, idx) => {
-                const roleIcons = [ShieldCheck, GraduationCap, Activity, HeartPulse, Sparkles];
-                const RoleIcon = roleIcons[idx] || Sparkles;
 
-                return (
-                  <motion.div
-                    key={role}
-                    className="group/role hover-lift flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70 transition-all duration-300 hover:border-aurora-400/50 hover:bg-gradient-to-r hover:from-white/10 hover:to-aurora-400/10 hover:text-white hover:shadow-[0_0_20px_rgba(63,180,255,0.2)]"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5 + idx * 0.1 }}
-                    whileHover={{ x: 4, scale: 1.02 }}
-                  >
-                    <span className="flex items-center gap-2">
-                      <RoleIcon size={16} className="text-aurora-400 opacity-0 transition-opacity duration-300 group-hover/role:opacity-100" />
-                      {role}
-                    </span>
-                    <span className="text-xs text-white/40 transition-colors duration-300 group-hover/role:text-aurora-300">
-                      pilih & jelajah →
-                    </span>
-                  </motion.div>
-                );
-              })}
-            </div>
             <motion.div
-              className="absolute inset-x-6 bottom-6 rounded-2xl border border-aurora-400/40 bg-aurora-400/10 px-4 py-3 text-sm text-aurora-100 transition-all duration-300 group-hover/panel:border-aurora-400/60 group-hover/panel:bg-aurora-400/15 group-hover/panel:shadow-[0_0_15px_rgba(63,180,255,0.3)]"
+              className="mt-6 rounded-2xl border border-aurora-400/40 bg-aurora-400/10 px-4 py-3 text-sm text-aurora-100 transition-all duration-300 group-hover/panel:border-aurora-400/60 group-hover/panel:bg-aurora-400/15 group-hover/panel:shadow-[0_0_15px_rgba(63,180,255,0.3)]"
               whileHover={{ scale: 1.02 }}
             >
               Demo auto-switch: juri · farmasis · admin = data dummy kaya | pengguna biasa = canvas kosong.

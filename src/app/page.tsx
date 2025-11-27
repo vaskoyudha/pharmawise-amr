@@ -6,6 +6,7 @@ import { ModulesGrid } from "@/components/landing/ModulesGrid";
 import { PersonaStrip } from "@/components/landing/PersonaStrip";
 import { RoleShowcase } from "@/components/landing/RoleShowcase";
 import { WelcomeFloatingCard } from "@/components/landing/WelcomeFloatingCard";
+import { VisualShowcase } from "@/components/landing/VisualShowcase";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
       <WelcomeFloatingCard />
       <main className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-12 md:py-20">
         <Hero />
+        <ScrollReveal animation="slideUp" delay={0.1}>
+          <VisualShowcase />
+        </ScrollReveal>
         <ScrollReveal animation="slideUp" delay={0.1}>
           <RoleShowcase />
         </ScrollReveal>
