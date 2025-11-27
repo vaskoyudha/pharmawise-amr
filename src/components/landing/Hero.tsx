@@ -18,7 +18,7 @@ const roles = ["Juri", "Farmasis", "Admin", "Pengguna biasa", "Dummy"];
 
 export function Hero() {
   return (
-    <section className="group relative overflow-hidden rounded-[48px] border border-white/10 bg-gradient-to-br from-[#0b1124] to-[#05060b] p-10 shadow-[0_50px_180px_rgba(0,0,0,0.65)] transition-all duration-500 hover:border-white/20 hover:shadow-[0_50px_180px_rgba(94,252,232,0.15)]">
+    <section className="group relative flex flex-col justify-center overflow-hidden rounded-[48px] border border-white/10 bg-gradient-to-br from-[#0b1124] to-[#05060b] p-10 shadow-[0_50px_180px_rgba(0,0,0,0.65)] transition-all duration-500 hover:border-white/20 hover:shadow-[0_50px_180px_rgba(94,252,232,0.15)] lg:max-h-[90vh]">
       <div className="absolute inset-0 bg-grid-glow opacity-70 transition-opacity duration-500 group-hover:opacity-100" aria-hidden />
 
       {/* Animated background gradient on hover */}

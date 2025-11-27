@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <WelcomeFloatingCard />
-      <main className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-12 md:py-20">
+      <main className="mx-auto flex max-w-7xl flex-col gap-16 px-4 py-12 md:py-20">
         <Hero />
         <ScrollReveal animation="slideUp" delay={0.1}>
           <VisualShowcase />
