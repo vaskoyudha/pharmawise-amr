@@ -43,7 +43,23 @@ export interface ButtonProps
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { className, variant, size, asChild, loading, onClick, children, disabled, onDrag, onDragEnd, onDragStart, ...props },
+  { 
+    className, 
+    variant, 
+    size, 
+    asChild, 
+    loading, 
+    onClick, 
+    children, 
+    disabled, 
+    onDrag, 
+    onDragEnd, 
+    onDragStart,
+    onAnimationStart,
+    onAnimationEnd,
+    onAnimationIteration,
+    ...props 
+  },
   ref
 ) {
   const [ripples, setRipples] = useState<RippleType[]>([]);
