@@ -71,13 +71,14 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
   };
 
   if (asChild) {
+    // Filter out props that Slot doesn't accept
+    const { disabled: _, ...slotProps } = props as ButtonHTMLAttributes<HTMLButtonElement>;
     return (
       <Slot
         ref={ref}
         className={cn(buttonVariants({ variant, size }), className)}
         onClick={handleClick}
-        disabled={disabled || loading}
-        {...props}
+        {...slotProps}
       >
         {loading ? (
           <>
