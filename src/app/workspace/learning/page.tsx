@@ -1,3 +1,5 @@
+"use client";
+
 import { LearningTimeline } from "@/components/workspace/LearningTimeline";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
