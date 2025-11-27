@@ -43,10 +43,9 @@ export interface ButtonProps
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { className, variant, size, asChild, loading, onClick, children, disabled, ...props },
+  { className, variant, size, asChild, loading, onClick, children, disabled, onDrag, onDragEnd, onDragStart, ...props },
   ref
 ) {
-  const Comp = asChild ? Slot : motion.button;
   const [ripples, setRipples] = useState<RippleType[]>([]);
 
   const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
@@ -71,8 +70,62 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     onClick?.(e);
   };
 
+  if (asChild) {
+    return (
+      <Slot
+        ref={ref}
+        className={cn(buttonVariants({ variant, size }), className)}
+        onClick={handleClick}
+        disabled={disabled || loading}
+        {...props}
+      >
+        {loading ? (
+          <>
+            <svg
+              className="h-4 w-4 animate-spin"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+            Loading...
+          </>
+        ) : (
+          children
+        )}
+
+        {/* Ripple effects */}
+        {ripples.map((ripple) => (
+          <span
+            key={ripple.id}
+            className="ripple"
+            style={{
+              left: ripple.x,
+              top: ripple.y,
+              width: 100,
+              height: 100,
+            }}
+          />
+        ))}
+      </Slot>
+    );
+  }
+
   return (
-    <Comp
+    <motion.button
       ref={ref}
       className={cn(buttonVariants({ variant, size }), className)}
       onClick={handleClick}
@@ -122,7 +175,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
           }}
         />
       ))}
-    </Comp>
+    </motion.button>
   );
 });
 
