@@ -168,6 +168,7 @@
     backdrop-filter: blur(18px);
     background-color: var(--glass);
     border: 1px solid var(--border);
+    border-radius: 1rem; /* rounded-2xl */
     box-shadow: 0 25px 80px rgba(0, 15, 56, 0.55);
     transition: all 0.3s ease;
   }

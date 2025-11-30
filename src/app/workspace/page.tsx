@@ -1,19 +1,15 @@
-import { AlertsFeed } from "@/components/workspace/AlertsFeed";
-import { DashboardCards } from "@/components/workspace/DashboardCards";
-import { DemandChart } from "@/components/workspace/DemandChart";
-import { LearningTimeline } from "@/components/workspace/LearningTimeline";
+import { Dashboard } from '@/components/workspace/Dashboard';
 
 export default function WorkspaceDashboard() {
   return (
-    <section className="flex flex-col gap-6">
-      <DashboardCards />
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <DemandChart />
-        </div>
-        <LearningTimeline />
+    <section className="space-y-6">
+      <div>
+        <p className="text-sm uppercase tracking-[0.3em] text-white/60">Analytics</p>
+        <h1 className="font-display text-3xl text-white">Dashboard</h1>
+        <p className="text-white/60">Monitor your antibiotic prescription patterns and performance metrics</p>
       </div>
-      <AlertsFeed />
+
+      <Dashboard userId="demo-user" />
     </section>
   );
 }

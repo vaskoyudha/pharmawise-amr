@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useRole } from "@/components/providers/role-context";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { useState, useEffect } from "react";
-import { Menu, X, Rocket, Sparkles } from "lucide-react";
+import { Menu, X, Rocket, LogIn, UserPlus, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
@@ -24,8 +25,8 @@ export function Navbar() {
   return (
     <motion.header
       className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-          ? "border-b border-white/20 bg-[#04060e]/95 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
-          : "border-b border-white/5 bg-[#04060e]/80 backdrop-blur-xl"
+        ? "border-b border-white/20 bg-[#04060e]/95 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
+        : "border-b border-white/5 bg-[#04060e]/80 backdrop-blur-xl"
         }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -40,9 +41,17 @@ export function Navbar() {
           <motion.div
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.6 }}
-            className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-600 to-aurora-400 shadow-lg shadow-purple-500/50"
+            className="relative flex h-14 w-14 items-center justify-center"
           >
-            <Sparkles className="h-5 w-5 text-white" />
+            <Image
+              src="/img/pharmawise-logo.png?v=2"
+              alt="PharmaWise-AMR Logo"
+              width={48}
+              height={48}
+              className="object-contain"
+              priority
+              unoptimized
+            />
           </motion.div>
           <span className="font-premium text-xl font-bold text-white transition-all group-hover:text-aurora-300">
             PharmaWise-AMR
@@ -72,37 +81,22 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
 
-          {/* Launch App Button - Prominent */}
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              asChild
-              size="lg"
-              className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/70 border-2 border-purple-400/50 hover:border-purple-300 transition-all duration-300"
-            >
-              <Link href="/workspace" className="flex items-center gap-2 px-6">
-                <Rocket className="h-4 w-4" />
-                <span className="font-bold hidden sm:inline">Luncurkan App</span>
-                <span className="font-bold sm:hidden">App</span>
-              </Link>
-            </Button>
-          </motion.div>
+          {/* Auth Buttons - Always Visible on Desktop */}
+          <Link
+            href="/auth/login"
+            className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-xl text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 text-sm font-medium"
+          >
+            <LogIn className="w-4 h-4" />
+            <span>Login</span>
+          </Link>
 
-          {/* Desktop Only Buttons */}
-          <div className="hidden items-center gap-2 lg:flex">
-            <Button
-              variant="ghost"
-              className="text-white/80 hover:text-white hover:bg-white/10"
-              onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}
-            >
-              {role ? "Ganti akun" : "Login"}
-            </Button>
-            <Button
-              className="bg-white/10 text-white border border-white/20 hover:bg-white/20"
-              onClick={() => document.dispatchEvent(new CustomEvent("open-auth-modal"))}
-            >
-              Register
-            </Button>
-          </div>
+          <Link
+            href="/auth/register"
+            className="hidden lg:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-aurora-500 to-purple-600 text-white shadow-lg shadow-aurora-500/25 hover:shadow-aurora-500/40 hover:scale-105 transition-all duration-200 text-sm font-semibold"
+          >
+            <UserPlus className="w-4 h-4" />
+            <span>Register</span>
+          </Link>
 
           {/* Mobile Menu Button */}
           <motion.button
@@ -146,7 +140,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="border-t border-white/10 bg-[#04060e]/98 backdrop-blur-2xl md:hidden"
+            className="border-t border-white/10 bg-[#04060e]/98 backdrop-blur-2xl md:hidden overflow-hidden"
           >
             <nav className="flex flex-col gap-1 px-6 py-4">
               {[
@@ -171,25 +165,25 @@ export function Navbar() {
                 </motion.div>
               ))}
 
-              <div className="mt-4 flex flex-col gap-2 border-t border-white/10 pt-4">
+              <div className="mt-6 flex flex-col gap-3 border-t border-white/10 pt-6">
                 <Button
+                  asChild
                   variant="ghost"
                   className="w-full justify-start text-white/80 hover:bg-white/10 hover:text-white"
-                  onClick={() => {
-                    document.dispatchEvent(new CustomEvent("open-auth-modal"));
-                    setMobileMenuOpen(false);
-                  }}
                 >
-                  {role ? "Ganti akun" : "Login"}
+                  <Link href="/auth/login" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
+                    <LogIn className="w-4 h-4" />
+                    Login
+                  </Link>
                 </Button>
                 <Button
-                  className="w-full justify-start bg-white/10 text-white border border-white/20"
-                  onClick={() => {
-                    document.dispatchEvent(new CustomEvent("open-auth-modal"));
-                    setMobileMenuOpen(false);
-                  }}
+                  asChild
+                  className="w-full justify-center bg-gradient-to-r from-aurora-500 to-purple-600 text-white shadow-lg shadow-aurora-500/20"
                 >
-                  Register
+                  <Link href="/auth/register" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2">
+                    <UserPlus className="w-4 h-4" />
+                    Create Account
+                  </Link>
                 </Button>
               </div>
             </nav>

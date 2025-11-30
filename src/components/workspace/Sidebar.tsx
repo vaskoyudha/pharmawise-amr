@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, FileSearch, MessageCircle, Activity, BellRing, GraduationCap, Settings, Megaphone } from "lucide-react";
+import { LayoutDashboard, FileSearch, MessageCircle, Activity, BellRing, GraduationCap, Settings, Megaphone, Bot } from "lucide-react";
 
 const navItems = [
   { href: "/workspace", label: "Dashboard", icon: LayoutDashboard },
   { href: "/workspace/review", label: "Review Resep", icon: FileSearch },
   { href: "/workspace/counseling", label: "Konseling", icon: MessageCircle },
-  { href: "/workspace/demand", label: "Report Demand", icon: Activity },
+  { href: "/chatbot", label: "Chatbot AMR", icon: Bot },
+  { href: "/workspace/demand-reporting", label: "Report Demand", icon: Activity },
   { href: "/workspace/campaign", label: "Campaign", icon: Megaphone },
   { href: "/workspace/alerts", label: "Early Warning", icon: BellRing },
   { href: "/workspace/learning", label: "Learning", icon: GraduationCap },

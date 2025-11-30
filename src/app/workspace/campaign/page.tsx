@@ -1,109 +1,64 @@
-"use client";
+'use client';
 
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Input } from "@/components/ui/input";
-import { useRole } from "@/components/providers/role-context";
-import { useState } from "react";
-
-const formats = ["Poster A3", "IG Carousel", "Video 30 detik", "WhatsApp Blast"];
-const tones = ["Edukasi", "Empatik", "Urgensi tinggi", "Fun fact"];
-
-const scheduledCampaigns = [
-  { title: "ISPA Rainy Season", channel: "IG Carousel", date: "20 Nov" },
-  { title: "Self-medication Alert", channel: "Video 30s", date: "25 Nov" },
-];
-
-const recommendations = [
-  { topic: "Lonjakan permintaan antibiotik untuk flu", format: "Poster", reason: "Pressure index tinggi di Jakarta" },
-  { topic: "Edukasi diare anak", format: "IG Carousel", reason: "Musim liburan" },
-];
+import { useState } from 'react';
+import { TemplateGallery } from '@/components/campaign/TemplateGallery';
+import { TemplateEditor } from '@/components/campaign/TemplateEditor';
+import { CampaignTemplate } from '@/types/campaign';
 
 export default function CampaignPage() {
-  const { mode } = useRole();
-  const isDemo = mode === "demo";
-  const [script, setScript] = useState("Halo! Antibiotik hanya bekerja untuk bakteri, bukan flu. Yuk edukasi pelanggan hari ini.");
+  const [selectedTemplate, setSelectedTemplate] = useState<CampaignTemplate | null>(null);
+  const [editingTemplate, setEditingTemplate] = useState<CampaignTemplate | null>(null);
+
+  const handleSelectTemplate = (template: CampaignTemplate) => {
+    setSelectedTemplate(template);
+  };
+
+  const handleEditTemplate = (template: CampaignTemplate) => {
+    setEditingTemplate(template);
+  };
 
   return (
     <section className="space-y-6">
       <div>
-        <p className="text-sm uppercase tracking-[0.3em] text-white/60">Campaign Toolkit</p>
-        <h1 className="font-display text-3xl text-white">Builder + rekomendasi konten</h1>
-        <p className="text-white/60">Susun poster, video, dan pesan empatik sesuai tren permintaan lokal.</p>
+        <p className="text-sm uppercase tracking-[0.3em] text-white/60">Modul D</p>
+        <h1 className="font-display text-3xl text-white">Campaign Toolkit</h1>
+        <p className="text-white/60">Buat materi kampanye AMR yang profesional untuk apotek Anda</p>
       </div>
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="rounded-3xl space-y-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm text-white/60">Campaign Builder</p>
-              <h3 className="text-2xl font-semibold text-white">Generate materi</h3>
-            </div>
-            <Button variant="secondary">Download aset</Button>
+
+      {!selectedTemplate ? (
+        <TemplateGallery onSelectTemplate={handleSelectTemplate} />
+      ) : (
+        <div className="glass-panel p-6 border border-white/10 rounded-2xl">
+          <div className="mb-4">
+            <h2 className="text-xl font-bold text-white">{selectedTemplate.title}</h2>
+            <p className="text-white/60 text-sm">{selectedTemplate.description}</p>
           </div>
-          <div className="grid gap-3 md:grid-cols-2">
-            <Input list="format-list" placeholder="Format" defaultValue={formats[0]} />
-            <Input list="tone-list" placeholder="Tone" defaultValue={tones[0]} />
-          </div>
-          <Textarea rows={6} value={script} onChange={(e) => setScript(e.target.value)} />
+
           <div className="flex gap-3">
-            <Button className="flex-1">Generate ulang</Button>
-            <Button variant="secondary" className="flex-1">
-              Simpan ke toolkit
-            </Button>
+            <button
+              onClick={() => setSelectedTemplate(null)}
+              className="px-4 py-2 rounded-xl bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all"
+            >
+              ← Kembali ke Gallery
+            </button>
+            <button
+              onClick={() => handleEditTemplate(selectedTemplate)}
+              className="px-4 py-2 rounded-xl bg-gradient-to-r from-aurora-500 to-purple-600 text-white font-medium hover:shadow-aurora-500/40 transition-all"
+            >
+              Customize Template
+            </button>
           </div>
-          <datalist id="format-list">
-            {formats.map((format) => (
-              <option key={format} value={format} />
-            ))}
-          </datalist>
-          <datalist id="tone-list">
-            {tones.map((tone) => (
-              <option key={tone} value={tone} />
-            ))}
-          </datalist>
-        </Card>
-        <Card className="rounded-3xl">
-          <p className="text-sm text-white/60">Jadwal rilis</p>
-          {isDemo ? (
-            <div className="mt-4 space-y-3">
-              {scheduledCampaigns.map((campaign) => (
-                <div key={campaign.title} className="rounded-2xl border border-white/10 px-4 py-3">
-                  <p className="text-white">{campaign.title}</p>
-                  <p className="text-xs text-white/50">
-                    {campaign.channel} · {campaign.date}
-                  </p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-4 text-sm text-white/60">Belum ada jadwal. Tambahkan kampanye pertama Anda untuk melihat kalender.</p>
-          )}
-        </Card>
-      </div>
-      <Card className="rounded-3xl">
-        <p className="text-sm text-white/60">Rekomendasi otomatis</p>
-        {isDemo ? (
-          <div className="mt-4 grid gap-3 md:grid-cols-2">
-            {recommendations.map((item) => (
-              <div key={item.topic} className="rounded-2xl border border-white/10 px-4 py-3">
-                <p className="text-white">{item.topic}</p>
-                <p className="text-xs text-white/50">{item.format}</p>
-                <p className="text-xs text-white/60">{item.reason}</p>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="mt-4 text-sm text-white/60">Hubungkan data demand untuk mendapatkan rekomendasi otomatis.</p>
-        )}
-      </Card>
+        </div>
+      )}
+
+      {/* Editor Modal */}
+      {editingTemplate && (
+        <TemplateEditor
+          template={editingTemplate}
+          userId="demo-user" // TODO: Replace with actual user ID from auth context
+          onClose={() => setEditingTemplate(null)}
+        />
+      )}
     </section>
   );
 }
-
-
-
-
-
-
-
